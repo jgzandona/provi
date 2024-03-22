@@ -15,6 +15,10 @@ function get_instantID_node(){
 #instala comfyui    
 cd /workspace
 git clone "https://github.com/comfyanonymous/ComfyUI"
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install -U --pre xformers
+cd /workspace/ComfyUI
+pip install -r requirements.txt
 
 #instala manager
 cd "/workspace/ComfyUI/custom_nodes"
@@ -45,7 +49,11 @@ provisioning_get_models \
 
 
 provisioning_get_models "/workspace/ComfyUI/models/checkpoints" \
- $CHECKPOINT_MODELS
+ $CHECKPOINT_MODELSv
+
+
+ apt update
+ apt install psmisc
 
 }
 
