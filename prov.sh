@@ -12,7 +12,9 @@ CONTROLNET_MODELS=(
 )
 
 function get_instantID_node(){
-#instala comfyui    
+#instala comfyui 
+apt install unzip
+unzip -v   
 cd /workspace
 git clone "https://github.com/comfyanonymous/ComfyUI"
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
