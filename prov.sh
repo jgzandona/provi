@@ -49,7 +49,7 @@ provisioning_get_models \
 
 
 provisioning_get_models "/workspace/ComfyUI/models/checkpoints" \
- $CHECKPOINT_MODELSv
+ $CHECKPOINT_MODELS
 
 
  apt update
@@ -82,4 +82,4 @@ function provisioning_get_models() {
     done
 }
 
-get_instantID_node()
+get_instantID_node
