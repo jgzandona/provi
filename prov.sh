@@ -34,7 +34,7 @@ mkdir $ANTELOPEV_DIR
 cd $ANTELOPEV_DIR
 ANTELOPEV_MODEL="https://huggingface.co/MonsterMMORPG/tools/resolve/main/antelopev2.zip"
 wget $ANTELOPEV_MODEL
-unzip -d antelopev2.zip
+unzip antelopev2.zip
 rm antelopev2.zip
 
 
