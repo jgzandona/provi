@@ -27,11 +27,13 @@ cd "/workspace/ComfyUI/custom_nodes"
 git clone "https://github.com/ltdrdata/ComfyUI-Manager.git"
 git clone "https://github.com/cubiq/ComfyUI_InstantID.git"
 
-
+cd /workspace/ComfyUI
 #BAIXA E UNZIP NOS ARQUIVOS OMNX
 ANTELOPEV_DIR="/workspace/ComfyUI/models/insightface/models"
-mkdir $ANTELOPEV_DIR
-cd $ANTELOPEV_DIR
+mkdir insightface
+cd insightface
+mkdir models
+cd models
 ANTELOPEV_MODEL="https://huggingface.co/MonsterMMORPG/tools/resolve/main/antelopev2.zip"
 wget $ANTELOPEV_MODEL
 unzip antelopev2.zip
